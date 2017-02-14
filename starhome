@@ -1,0 +1,122 @@
+#include<stdio.h>
+#include<conio.h>
+
+int roof(){
+	int i;
+	//Roof
+
+    printf(" ");
+	for(i=0;i<20;i++)
+	printf("*"); 
+	printf("\n");
+	   
+	   
+	printf("*");
+	for(i=0;i<20;i++)
+	printf(" ");
+		
+	printf("*");
+	for(i=0;i<10;i++)
+	printf(" ");
+		
+return 0;	
+}
+
+
+int floor(){
+	
+	int katsayisi,o,p,r,s;
+	
+	printf("How many floors do you want? ");
+	scanf("%d",&katsayisi);
+	   
+	   //floors
+	for(p=0;p<katsayisi;p++){
+	   	
+	//kat siniri ilk
+	for(r=0;r<22;r++)
+	printf("*");
+    printf("\n");
+         	
+    //kat ici
+    for(s=0;s<5;s++)
+	{
+        printf("*");
+        
+		for(o=0;o<20;o++)
+		printf(" ");
+		
+		printf("*");
+		printf("\n");
+	}
+		 printf("\n");
+		
+	//kat siniri son
+		for(r=0;r<22;r++)
+		printf("*");
+		
+		
+		 printf("\n");
+}
+
+return 0;
+}
+
+
+int door(){
+		int j, d, e;
+	 //kapiüstü
+		printf("*");
+		for(d=0;d<6;d++)
+		printf(" ");
+
+		for(d=0;d<8;d++)
+		printf("*");
+	
+		for(d=0;d<6;d++)
+		printf(" ");
+
+		printf("*");
+		printf("\n");
+
+	//kapıiçi
+	for(e=0;e<4;e++)
+	{
+		for(j=0;j<3;j++)
+		{
+		printf("*");
+		for(d=0;d<6;d++)
+		printf(" ");
+		}
+		
+		printf("*");
+		printf("\n");
+}
+//kapıaltı
+for(d=0;d<22;d++){
+	printf("*");
+}
+
+return 0;
+}
+
+
+
+
+
+int main () {
+	int kapi,cati,kat;
+	
+	
+	printf("Home:\n\n\n", cati, kat, kapi);
+	
+	
+	cati= roof();
+	kat=  floor();
+	kapi= door();
+	
+	
+	
+	getch();
+	return 0;
+}
